@@ -52,7 +52,7 @@
                             <td>'. $row['phone'] .'</td>
                             <td>'. $row['address'] .'</td>
                             <td>
-                               <a href="./edit.php?id='. $row['id'] .'" class="btn btn-primary btn-sm">Edit</a>
+                               <a href="edit.php?id='. $row['id'] .'" class="btn btn-primary btn-sm">Edit</a>
                                <a href="delete.php?id='. $row['id'] .'" class="btn btn-danger btn-sm">Delete</a>
                             </td>
                         </tr>
