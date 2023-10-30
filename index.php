@@ -8,8 +8,10 @@
 </head>
 <body>
     <div class="container my-5">
+        <h1 class="text-center text-info">Login | System</h1>
+        <a href="./create.php" class="btn btn-primary">Sign-Up</a>
        <table class="table caption-top">
-          <caption><h2>List of users</h2></caption>
+          <caption><h2 class="text-success">List of users</h2></caption>
             <thead>
                  <tr>
                     <th scope="col">ID</th>
