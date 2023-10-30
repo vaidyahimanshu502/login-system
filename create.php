@@ -21,10 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
     $address = $_POST['address'];
 
+    $hashed_pass = password_hash($password, PASSWORD_DEFAULT);
+
     if (empty($name) || empty($email) || empty($password) || empty($phone) || empty($address)) {
         $errorMsg = "All fields are required!";
     } else {
-        $query = "INSERT INTO users (name, email, password, phone, address) VALUES ('$name', '$email', '$password', '$phone', '$address')";
+        $query = "INSERT INTO users (name, email, password, phone, address) VALUES ('$name', '$email', '$hashed_pass', '$phone', '$address')";
         $result = $connection->query($query);
 
         if (!$result) {

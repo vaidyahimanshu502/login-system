@@ -10,6 +10,7 @@
     <div class="container my-5">
         <h1 class="text-center text-info">Login | System</h1>
         <a href="./create.php" class="btn btn-primary">Sign-Up</a>
+        <a href="./login.php" class="btn btn-primary">Log-In</a>
        <table class="table caption-top">
           <caption><h2 class="text-success">List of users</h2></caption>
             <thead>
